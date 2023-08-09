@@ -7,6 +7,7 @@ function setup_rbenv {
         Darwin*) # macOS
             brew update
             brew outdated ruby-build || brew upgrade ruby-build
+            eval "$(rbenv init -)"
             ;;
         Linux*)
             # https://github.com/rbenv/rbenv-installer
